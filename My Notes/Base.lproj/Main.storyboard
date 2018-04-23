@@ -1,24 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xsL-3K-Zhs">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Your Penguins-->
+        <scene sceneID="wFm-SM-ebF">
+            <objects>
+                <tableViewController id="XVd-OD-yv1" customClass="PenguinTableViewController" customModule="My_Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="A0q-f3-G9t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PenguinTableViewCell" rowHeight="90" id="XpC-Vw-EwN" customClass="PenguinTableViewCell" customModule="My_Notes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XpC-Vw-EwN" id="AwI-PY-0M1">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XVs-G3-RdU">
+                                            <rect key="frame" x="4" y="4" width="312" height="81.5"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="150" verticalHuggingPriority="150" placeholderIntrinsicWidth="81.5" placeholderIntrinsicHeight="81.5" insetsLayoutMarginsFromSafeArea="NO" image="DefaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="if9-ml-yIN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="81.5" height="81.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="if9-ml-yIN" secondAttribute="height" multiplier="1:1" id="Sls-EN-TOk"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-Tq-h9P">
+                                                    <rect key="frame" x="89.5" y="0.0" width="222.5" height="81.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="20.5" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-MO-xHy">
+                                                            <rect key="frame" x="0.0" y="0.0" width="222.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Znj-hI-fOh" customClass="RatingControl" customModule="My_Notes" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="41.5" width="222.5" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="pau-kz-RO0"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="size" keyPath="starSize">
+                                                                    <size key="value" width="40" height="40"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="XVs-G3-RdU" secondAttribute="trailing" constant="4" id="2jR-sc-FAm"/>
+                                        <constraint firstItem="XVs-G3-RdU" firstAttribute="leading" secondItem="AwI-PY-0M1" secondAttribute="leading" constant="4" id="2tL-dX-ZxI"/>
+                                        <constraint firstItem="XVs-G3-RdU" firstAttribute="leading" secondItem="AwI-PY-0M1" secondAttribute="leading" constant="4" id="E0i-29-qE5"/>
+                                        <constraint firstItem="XVs-G3-RdU" firstAttribute="top" secondItem="AwI-PY-0M1" secondAttribute="top" constant="4" id="Jal-jn-ARA"/>
+                                        <constraint firstAttribute="bottom" secondItem="XVs-G3-RdU" secondAttribute="bottom" constant="4" id="XgR-Af-D0L"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="mFo-MO-xHy" id="Kj7-pr-MB5"/>
+                                    <outlet property="photoImageView" destination="if9-ml-yIN" id="Rbt-Op-N9Z"/>
+                                    <outlet property="ratingControl" destination="Znj-hI-fOh" id="XgK-Al-aE8"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="K4g-OG-pW7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XVd-OD-yv1" id="yQ6-IC-oLB"/>
+                            <outlet property="delegate" destination="XVd-OD-yv1" id="LHe-mv-tZb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Your Penguins" id="MCS-EV-daa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="D21-Eb-kVc">
+                            <connections>
+                                <segue destination="EmJ-CO-QMN" kind="presentation" identifier="AddItem" id="HIm-gH-bmR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lp9-CR-BdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337.5" y="118.30985915492958"/>
+        </scene>
+        <!--New Penguin-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PenguinViewController" customModule="My_Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Jl-kr-fwI">
+                                <rect key="frame" x="16" y="84" width="288" height="378"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2aV-7j-QBm">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
+                                        <color key="backgroundColor" red="0.97527085909460476" green="1" blue="0.97758936153565423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" keyboardKey="YES"/>
+                                        </accessibility>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="290" placeholderIntrinsicHeight="290" image="DefaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="0qD-mm-ygX">
+                                        <rect key="frame" x="0.0" y="38" width="288" height="288"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0qD-mm-ygX" secondAttribute="height" multiplier="1:1" id="10i-S9-GBh"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="q6G-jT-Wgc" appends="YES" id="8q4-KQ-rJd"/>
+                                        </connections>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="svl-5g-FXk" customClass="RatingControl" customModule="My_Notes" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="334" width="252" height="44"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2aV-7j-QBm" secondAttribute="trailing" id="SHD-ja-0fh"/>
+                                    <constraint firstItem="2aV-7j-QBm" firstAttribute="leading" secondItem="4Jl-kr-fwI" secondAttribute="leading" id="hww-VD-DAC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Jl-kr-fwI" secondAttribute="trailing" constant="16" identifier="id1" id="3pK-Y3-WNb"/>
+                            <constraint firstItem="4Jl-kr-fwI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" identifier="id3" id="bSG-Fo-u7X"/>
+                            <constraint firstItem="4Jl-kr-fwI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" identifier="id5" id="uxK-Up-MvF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Penguin" id="RvX-lG-r2d">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="z6m-z3-7iH">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="nq2-p1-XvI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="pkt-XJ-rz0">
+                            <connections>
+                                <segue destination="wO1-51-Rbi" kind="unwind" unwindAction="unwindToPenguinsListWithSender:" id="a7Y-uf-h1i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="photoImageView" destination="0qD-mm-ygX" id="geV-bD-wPe"/>
+                        <outlet property="ratingControl" destination="svl-5g-FXk" id="mDP-wB-MxU"/>
+                        <outlet property="saveButton" destination="pkt-XJ-rz0" id="EVf-Zv-XSl"/>
+                        <outlet property="titleTextField" destination="2aV-7j-QBm" id="Eau-FX-FX2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="wO1-51-Rbi" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="q6G-jT-Wgc">
+                    <connections>
+                        <action selector="SelectImage:" destination="BYZ-38-t0r" id="wZr-7E-j5u"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1296" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nqL-eJ-fMm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xsL-3K-Zhs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZX5-Ei-SDy">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XVd-OD-yv1" kind="relationship" relationship="rootViewController" id="XeK-gb-bCN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvv-sf-Twh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1133" y="118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ylI-5O-fLa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EmJ-CO-QMN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="97I-bR-e1N">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KiW-KI-mA6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ph-Px-S4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493" y="458"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DefaultPhoto" width="216" height="311"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="K4g-OG-pW7"/>
+    </inferredMetricsTieBreakers>
 </document>

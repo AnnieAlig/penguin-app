@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		63BC67902073AA7900DE933E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC678F2073AA7900DE933E /* AppDelegate.swift */; };
-		63BC67922073AA7900DE933E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC67912073AA7900DE933E /* ViewController.swift */; };
+		63BC67922073AA7900DE933E /* PenguinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC67912073AA7900DE933E /* PenguinViewController.swift */; };
 		63BC67952073AA7900DE933E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BC67932073AA7900DE933E /* Main.storyboard */; };
 		63BC67972073AA7900DE933E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BC67962073AA7900DE933E /* Assets.xcassets */; };
 		63BC679A2073AA7900DE933E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BC67982073AA7900DE933E /* LaunchScreen.storyboard */; };
 		63BC67A52073AA7A00DE933E /* My_NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC67A42073AA7A00DE933E /* My_NotesTests.swift */; };
+		63F6A1352088979900FC9060 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6A1342088979900FC9060 /* RatingControl.swift */; };
+		63F6A1372088CB4E00FC9060 /* Penguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6A1362088CB4E00FC9060 /* Penguin.swift */; };
+		63F6A1392088D83300FC9060 /* PenguinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6A1382088D83300FC9060 /* PenguinTableViewCell.swift */; };
+		63F6A13B2088DD8700FC9060 /* PenguinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6A13A2088DD8700FC9060 /* PenguinTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,7 @@
 /* Begin PBXFileReference section */
 		63BC678C2073AA7900DE933E /* My Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BC678F2073AA7900DE933E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63BC67912073AA7900DE933E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63BC67912073AA7900DE933E /* PenguinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinViewController.swift; sourceTree = "<group>"; };
 		63BC67942073AA7900DE933E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63BC67962073AA7900DE933E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63BC67992073AA7900DE933E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		63BC67A02073AA7A00DE933E /* My NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My NotesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BC67A42073AA7A00DE933E /* My_NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_NotesTests.swift; sourceTree = "<group>"; };
 		63BC67A62073AA7A00DE933E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F6A1342088979900FC9060 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		63F6A1362088CB4E00FC9060 /* Penguin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penguin.swift; sourceTree = "<group>"; };
+		63F6A1382088D83300FC9060 /* PenguinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinTableViewCell.swift; sourceTree = "<group>"; };
+		63F6A13A2088DD8700FC9060 /* PenguinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				63BC678F2073AA7900DE933E /* AppDelegate.swift */,
-				63BC67912073AA7900DE933E /* ViewController.swift */,
+				63BC67912073AA7900DE933E /* PenguinViewController.swift */,
+				63F6A1342088979900FC9060 /* RatingControl.swift */,
+				63F6A1362088CB4E00FC9060 /* Penguin.swift */,
+				63F6A1382088D83300FC9060 /* PenguinTableViewCell.swift */,
+				63F6A13A2088DD8700FC9060 /* PenguinTableViewController.swift */,
 				63BC67932073AA7900DE933E /* Main.storyboard */,
 				63BC67962073AA7900DE933E /* Assets.xcassets */,
 				63BC67982073AA7900DE933E /* LaunchScreen.storyboard */,
@@ -199,7 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63BC67922073AA7900DE933E /* ViewController.swift in Sources */,
+				63F6A13B2088DD8700FC9060 /* PenguinTableViewController.swift in Sources */,
+				63BC67922073AA7900DE933E /* PenguinViewController.swift in Sources */,
+				63F6A1352088979900FC9060 /* RatingControl.swift in Sources */,
+				63F6A1392088D83300FC9060 /* PenguinTableViewCell.swift in Sources */,
+				63F6A1372088CB4E00FC9060 /* Penguin.swift in Sources */,
 				63BC67902073AA7900DE933E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,11 +369,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHCTQ29Q5J;
 				INFOPLIST_FILE = "My Notes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mynotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,11 +386,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHCTQ29Q5J;
 				INFOPLIST_FILE = "My Notes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.My-Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mynotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
